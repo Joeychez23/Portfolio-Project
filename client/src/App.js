@@ -87,13 +87,13 @@ export default function App() {
       image: "./books.png",
       link: "https://books.aws-prac-route53.com/"
     },
-    {
-      title: "Merge Sort Visualizer",
-      description: "An application which generates a random array that will be sorted visually in O(logN).",
-      tech: ["Merge Sort", "React", "Javascript"],
-      image: "./merge.png",
-      link: "https://merge-sort.aws-prac-route53.com/"
-    },
+    // {
+    //   title: "Merge Sort Visualizer",
+    //   description: "An application which generates a random array that will be sorted visually in O(logN).",
+    //   tech: ["Merge Sort", "React", "Javascript"],
+    //   image: "./merge.png",
+    //   link: "https://merge-sort.aws-prac-route53.com/"
+    // },
     {
       title: "LeetCode",
       description: "My LeetCode Profile",
@@ -115,18 +115,18 @@ export default function App() {
   ]
 
   const skills = [
-    { name: "JavaScript", level: 100 },
-    { name: "React", level: 95 },
-    { name: "AWS", level: 95 },
-    { name: "Lambda", level: 95 },
-    { name: "Java", level: 90 },
-    { name: "OOP", level: 90 },
-    { name: "Spring", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "SQL", level: 80 },
-    { name: "MongoDB", level: 80 },
-    { name: "DynamoDB", level: 90 },
-    { name: "Git/GitHub", level: 90 }
+    { name: "JavaScript", level: 90 },
+    { name: "React", level: 87 },
+    { name: "AWS", level: 90 },
+    { name: "Lambda", level: 85 },
+    { name: "Java", level: 80 },
+    { name: "OOP", level: 80 },
+    { name: "Spring", level: 75 },
+    { name: "Node.js", level: 90 },
+    { name: "SQL", level: 70 },
+    { name: "MongoDB", level: 75 },
+    { name: "DynamoDB", level: 85 },
+    { name: "Git/GitHub", level: 95 }
   ];
 
   return (
@@ -191,10 +191,10 @@ export default function App() {
         <div className="hero-inner">
           <div className="hero-text">
             <h1 className="hero-title">
-              Turning Vision into <span className="gradient-text">Digital Reality</span>
+              Solving Problems, <span className="gradient-text">One Line of Code at a Time</span>
             </h1>
             <p className="hero-subtitle">
-              Full Stack Developer passionate about building scalable web applications and creating exceptional user experiences.
+              Software Engineer | Cloud & Backend Systems
             </p>
             <div className="hero-buttons">
               <button
@@ -229,30 +229,11 @@ export default function App() {
             <h2 className="section-title">About Me</h2>
             <div className="section-divider"></div>
             <p className="section-subtitle">
-              I'm a passionate software developer with experience building web applications and solving complex problems.
-              With a strong foundation in both frontend and backend technologies, I create scalable solutions that deliver value to users.
+              Skilled Software Engineer with experience developing cloud infrastructure using AWS/Terraform, along with developing applications in Spring, React, and Webpack. Proficient in multiple programming languages, including Java, JavaScript, Python, and C#. Adept at developing backend infrastructure, integrating secure authentication, and contributing to content management systems. Looking to leverage my skills to contribute to innovative projects within a dynamic company.
             </p>
           </div>
 
           <div className="about-grid">
-            <div className="about-image-wrapper">
-              <div className="about-image-bg"></div>
-              <div className="about-card">
-                <h3>My Journey</h3>
-                <p>
-                  I started coding at the age of 16, fascinated by how websites could be transformed from static pages to dynamic experiences.
-                  I've worked on numerous projects ranging from small business websites to enterprise-level applications.
-                </p>
-                <p>
-                  My passion lies in creating intuitive, performant applications that solve real-world problems. I believe in continuous learning
-                  and always strive to stay up-to-date with the latest technologies and best practices.
-                </p>
-                <p>
-                  When I'm not coding, you can find me exploring new frameworks, contributing to open-source projects, or mentoring aspiring developers.
-                </p>
-              </div>
-            </div>
-
             <div className="about-list">
               <div className="about-item">
                 <div className="about-icon">
@@ -286,7 +267,8 @@ export default function App() {
                 </div>
                 <div>
                   <h4>Certifications</h4>
-                  <p>AWS Certified Solutions Architect - Associate, AWS Certified Cloud Practitioner</p>
+                  <p>AWS Certified Solutions Architect - Associate</p>
+                  <p>AWS Certified Cloud Practitioner</p>
                 </div>
               </div>
             </div>
@@ -495,7 +477,7 @@ export default function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                     <div>
-                      <p>Woodinville, WA</p>
+                      <p>Bothell, WA</p>
                     </div>
                   </div>
                 </div>

@@ -371,7 +371,7 @@ textarea {
 
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 3.75rem;
+    font-size: 3.50rem;
   }
 }
 
@@ -668,6 +668,7 @@ textarea {
 .project-footer {
   flex: 1 1 auto;
   width: 100%;
+  margin-top: auto;
 }
 
 .project-btn {
@@ -676,6 +677,7 @@ textarea {
   padding: 0.75rem 1.5rem;
   background: var(--color-accent);
   color: #fff;
+
 }
 
 .project-btn:hover {
@@ -830,13 +832,13 @@ textarea {
 .download-btn {
   width: 100%;
   padding: 0.75rem 1rem;
-  background: var(--color-accent-deep);
+  background: var(--color-accent);
   color: #fff;
   gap: 0.5rem;
 }
 
 .download-btn:hover {
-  background: var(--color-accent-deep-dark);
+  background: var(--color-accent-dark);
 }
 
 .download-btn svg {
