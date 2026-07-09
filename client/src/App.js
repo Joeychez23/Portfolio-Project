@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
+// require('dotenv').config()
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const [isSending, setIsSending] = useState(false);
-
+  const [messageSent, setMessageSent] = useState(localStorage.getItem("messageBool"));
+  //   const [messageSent, setMessageSent] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
-
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
@@ -32,7 +33,7 @@ export default function App() {
 
   const handlesMessage = async (email, name, subject, message) => {
     setIsSending(true);
-    const url = "https://backend.chess.aws-prac-route53.com/api/email";
+    const url = process.env.REACT_APP_EMAIL_URL;
     const options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -43,13 +44,18 @@ export default function App() {
         message
       })
     };
+      //     const data = await fetch(url, options).then(res => res.json())
+      // console.log(data)
     try {
-      const response = await fetch(url, options);
-      const data = await response.json();
+      // const response = await fetch(url, options);
+      const data = await fetch(url, options).then(res => res.json())
+      console.log(data)
+      // const data = await response.json();
 
       if (data.status === 200) {
         window.alert("Message Sent Successfully");
         document.getElementById("contact-form").reset();
+        localStorage.setItem("messageBool", true);
       } else {
         window.alert("Failed To Send Message");
       }
@@ -307,7 +313,10 @@ export default function App() {
           <div className="tools-section">
             <h3 className="tools-title">Tools &amp; Technologies</h3>
             <div className="tools-list">
-              {["VS Code", "WebStorm", "Postman", "Figma", "MongoDB", "MySQL", "Redis", "Kubernetes", "GraphQL", "Jest", "Cypress", "Jira"].map((tool, index) => (
+              {[
+                "JavaScript", "Java", "Python", "C#", "React", "Node.js", "Webpack", "Spring",
+                "GraphQL", "Jest", "Git", "GitHub/GitLab", "CI/CD", "Terrafrom", "EC2(linux)", "ALB", "Auto Scaling", "S3", "CloudFront", "API GW", "Lambda", "Route 53(Subnets)"
+              ].map((tool, index) => (
                 <span
                   key={index}
                   className="tool-tag"
@@ -430,24 +439,32 @@ export default function App() {
                     placeholder="Tell me about your opportunity..."
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="submit-btn"
-                  disabled={isSending}
-                  onClick={(event) => {
-                    event.preventDefault();
-                    let emailRegex = RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$");
-                    let emailStr = document.getElementById("email").value;
-                    let nameStr = document.getElementById("name").value;
-                    let subjectStr = document.getElementById("subject").value;
-                    let messageStr = document.getElementById("message").value;
-                    if (emailRegex.test(emailStr) && nameStr.length > 1 && subjectStr.length > 1 && messageStr.length > 1) {
-                      handlesMessage(emailStr, nameStr, subjectStr, messageStr);
-                    }
-                  }}
-                >
-                  {isSending ? "Sending..." : "Send Message"}
-                </button>
+                {messageSent ? (
+                  <button
+                    type="submit"
+                    className="submit-btn-disabled"
+                    disabled={true}
+                  > Message Sent </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="submit-btn"
+                    disabled={isSending}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      let emailRegex = RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$");
+                      let emailStr = document.getElementById("email").value;
+                      let nameStr = document.getElementById("name").value;
+                      let subjectStr = document.getElementById("subject").value;
+                      let messageStr = document.getElementById("message").value;
+                      if (emailRegex.test(emailStr) && nameStr.length > 1 && subjectStr.length > 1 && messageStr.length > 1) {
+                        handlesMessage(emailStr, nameStr, subjectStr, messageStr);
+                      }
+                    }}
+                  >
+                    {isSending ? "Sending..." : "Send Message"}
+                  </button>
+                )}
               </form>
             </div>
 

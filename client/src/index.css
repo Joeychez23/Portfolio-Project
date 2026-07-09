@@ -270,6 +270,7 @@ textarea {
 .btn-primary,
 .btn-outline,
 .submit-btn,
+.submit-btn-disabled,
 .project-btn,
 .download-btn {
   display: inline-flex;
@@ -284,6 +285,7 @@ textarea {
 .btn-primary:hover,
 .btn-outline:hover,
 .submit-btn:hover,
+.submit-btn-disabled:hover,
 .project-btn:hover,
 .download-btn:hover {
   transform: translateY(-0.25rem);
@@ -756,6 +758,18 @@ textarea {
 
 .submit-btn:hover {
   background: var(--color-accent-dark);
+}
+
+.submit-btn-disabled {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-neutral);
+  color: #fff;
+}
+
+
+.submit-btn-disabled:hover {
+  background: var(--color-neutral-dark);
 }
 
 .submit-btn:disabled {
