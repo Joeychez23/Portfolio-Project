@@ -98,7 +98,7 @@ export default function App() {
       title: "AWS Lambdas",
       description: "Backend Lambda's and Terraform to Support the inquiry service and the Chess application",
       tech: ["Javascript", "Lambda", "Terraform"],
-      image: "./lambda.png",
+      image: "./lambdas.png",
       link: "https://github.com/Joeychez23/Lambdas/"
     },
     // {
