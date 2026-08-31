@@ -528,7 +528,7 @@ export default function App() {
               <div className="info-card">
                 <h3>Download Resume</h3>
                 <button
-                  onClick={(event) => { event.preventDefault(); window.open('./Joseph_Sanchez_Resume.pdf', '_blank', 'noopener,noreferrer'); }}
+                  onClick={(event) => { event.preventDefault(); window.open('./Resume.pdf', '_blank', 'noopener,noreferrer'); }}
                   className="download-btn"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
