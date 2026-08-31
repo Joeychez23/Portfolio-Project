@@ -53,6 +53,7 @@ export default function App() {
       // const data = await response.json();
 
       if (data.status === 200) {
+        
         window.alert("Message Sent Successfully");
         document.getElementById("contact-form").reset();
         localStorage.setItem("messageBool", true);
@@ -92,6 +93,13 @@ export default function App() {
       tech: ["GraphQL", "Javascript", "MongoDB"],
       image: "./books.png",
       link: "https://books.aws-prac-route53.com/"
+    },
+        {
+      title: "AWS Lambdas",
+      description: "Backend Lambda's and Terraform to Support the inquiry service and the Chess application",
+      tech: ["Javascript", "Lambda", "Terraform"],
+      image: "./lambda.png",
+      link: "https://github.com/Joeychez23/Lambdas/"
     },
     // {
     //   title: "Merge Sort Visualizer",
