@@ -270,7 +270,7 @@ export default function App() {
                 <div>
                   <h4>Education</h4>
                   <p>Full-Stack Development Certification, University of Washington</p>
-                  <o>Computer Programming, Cloud Architecture, Self-Taught</o>
+                  <p>Computer Programming, Cloud Architecture, Self-Taught</p>
                 </div>
               </div>
 
