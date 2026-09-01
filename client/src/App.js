@@ -44,8 +44,8 @@ export default function App() {
         message
       })
     };
-      //     const data = await fetch(url, options).then(res => res.json())
-      // console.log(data)
+    //     const data = await fetch(url, options).then(res => res.json())
+    // console.log(data)
     try {
       // const response = await fetch(url, options);
       const data = await fetch(url, options).then(res => res.json())
@@ -53,7 +53,7 @@ export default function App() {
       // const data = await response.json();
 
       if (data.status === 200) {
-        
+
         window.alert("Message Sent Successfully");
         document.getElementById("contact-form").reset();
         localStorage.setItem("messageBool", true);
@@ -94,9 +94,9 @@ export default function App() {
       image: "./books.png",
       link: "https://books.aws-prac-route53.com/"
     },
-        {
+    {
       title: "AWS Lambdas",
-      description: "Backend Lambda's and Terraform to Support the inquiry service and the Chess application",
+      description: "Backend Lambda's and Terraform to support the inquiry service and the Chess application",
       tech: ["Javascript", "Lambda", "Terraform"],
       image: "./lambdas.png",
       link: "https://github.com/Joeychez23/Lambdas/"
@@ -243,7 +243,7 @@ export default function App() {
             <h2 className="section-title">About Me</h2>
             <div className="section-divider"></div>
             <p className="section-subtitle">
-              Skilled Software Engineer with experience developing cloud infrastructure using AWS/Terraform, along with developing applications in Spring, React, and Webpack. Proficient in multiple programming languages, including Java, JavaScript, Python, and C#. Adept at developing backend infrastructure, integrating secure authentication, and contributing to content management systems. Looking to leverage my skills to contribute to innovative projects within a dynamic company.
+              Skilled Software Engineer with experience developing cloud infrastructure using AWS/Terraform, along with developing applications in Spring, React, and Webpack. Proficient in multiple programming languages, including Java, JavaScript, Python, and C#. Adept at developing backend infrastructure, integrating secure authentication, and contributing to content management systems. Looking to leverage my skills to contribute to innovative projects and integrate myself into a robust team where I can learn from my peers and continue my journey as a Software Engineer.
             </p>
           </div>
 
@@ -269,7 +269,8 @@ export default function App() {
                 </div>
                 <div>
                   <h4>Education</h4>
-                  <p>Certification in Full-Stack Development from the University of Washington</p>
+                  <p>Full-Stack Development Certification, University of Washington</p>
+                  <p>Computer Science, Washington State University</p>
                 </div>
               </div>
 
