@@ -76,23 +76,17 @@ export default function App() {
       link: "https://chess.aws-prac-route53.com/"
     },
     {
+      title: "Data Migration Service",
+      description: "A Java based service using Spring Core which migrates hundreds of millions of row of data into lower enviroments.",
+      tech: ["Java", "Spring Core", "SQL"],
+      image: "./migrate.png",
+      //link: "https://github.com/Joeychez23/Java-Spring-Migration-Service/"
+    },
+    {
       title: "Lakeside Cabin",
       description: "A broadcast application which is delivered over the air allowing Sinclair to broaden it goals to more than just traditional over the air broadcasting.",
       tech: ["Webpack", "Jquery", "Object Oriented Programming"],
       image: "./cabin.png"
-    },
-    {
-      title: "Data Migration Service",
-      description: "A Java based service using Spring Core which migrates hundreds of millions of row of data into lower enviroments.",
-      tech: ["Java", "Spring Core", "SQL"],
-      image: "./migrate.png"
-    },
-    {
-      title: "Google Book Search",
-      description: "A GraphQL application which allows the user to seach of books and save book for later when an account is made",
-      tech: ["GraphQL", "Javascript", "MongoDB"],
-      image: "./books.png",
-      link: "https://books.aws-prac-route53.com/"
     },
     {
       title: "AWS Lambdas",
@@ -101,19 +95,61 @@ export default function App() {
       image: "./lambdas.png",
       link: "https://github.com/Joeychez23/Lambdas/"
     },
-    // {
-    //   title: "Merge Sort Visualizer",
-    //   description: "An application which generates a random array that will be sorted visually in O(logN).",
-    //   tech: ["Merge Sort", "React", "Javascript"],
-    //   image: "./merge.png",
-    //   link: "https://merge-sort.aws-prac-route53.com/"
-    // },
+    {
+      title: "Auth0",
+      description: "Auth0 examples for integration client side, internal infastructure, and Auth0 Console runtime scripts",
+      tech: ["Auth0", "Lambda", "Security"],
+      image: "./Auth0.png",
+      link: "https://github.com/Joeychez23/Auth0/"
+    },
+    {
+      title: "AWS Application Load Balancer -> Auto Scaling -> Nginx/EC2 Webserver Terrafrom",
+      description: "A Github repo showcasing a passion project to get websites requiring server.js running with HTTPS (Bookstore is the functional example)",
+      tech: ["EC2", "ALB", "Terraform", "Nginx"],
+      image: "./Terraformaws.png",
+      link: "https://github.com/Joeychez23/AWS-Notes-Terraform/"
+    },
     {
       title: "LeetCode",
       description: "My LeetCode Profile",
       tech: ["Data Structures", "Java", "Javascript"],
       image: "./leetcode.png",
       link: "https://leetcode.com/u/jbsanchez23/"
+    },
+    {
+      title: "Github Gist's",
+      description: "Simple Data Structures and Algorithms",
+      tech: ["Data Structures", "Algorithms", "Javascript"],
+      image: "./Gist.png",
+      link: "https://gist.github.com/Joeychez23/"
+    },
+    {
+      title: "Google Book Search",
+      description: "(API is Deprecated) A GraphQL application showcasing an Nginx/EC2 webserver with an Application Load Balancer/Auto Scaling",
+      tech: ["GraphQL", "Javascript", "MongoDB"],
+      image: "./books.png",
+      link: "https://books.aws-prac-route53.com/"
+    },
+    {
+      title: "DevHub",
+      description: "This is a website where developers can visit to browse, find inspiration and collaborate with other developers on projects that are posted.",
+      tech: ["GraphQL", "Javascript", "MongoDB", "S3"],
+      image: "./Graphql.png",
+      link: "https://github.com/Joeychez23/DevHub"
+    },
+    {
+      title: "Merge Sort Visualizer",
+      description: "An application which generates a random array that will be sorted visually in O(logN).",
+      tech: ["Merge Sort", "React", "Javascript"],
+      image: "./merge.png",
+      link: "https://merge-sort.aws-prac-route53.com/"
+    },
+    {
+      title: "Gravity Ball",
+      description: "An application which showcases basic ball bound physics using HTML5 Canvas",
+      tech: ["Canvas", "Javascript"],
+      image: "./ball.png",
+      link: "https://ball.aws-prac-route53.com"
     },
   ];
 
@@ -129,18 +165,18 @@ export default function App() {
   ]
 
   const skills = [
-    { name: "JavaScript", level: 90 },
-    { name: "React", level: 87 },
-    { name: "AWS", level: 90 },
-    { name: "Lambda", level: 85 },
-    { name: "Java", level: 80 },
-    { name: "OOP", level: 80 },
-    { name: "Spring", level: 75 },
-    { name: "Node.js", level: 90 },
-    { name: "SQL", level: 70 },
-    { name: "MongoDB", level: 75 },
-    { name: "DynamoDB", level: 85 },
-    { name: "Git/GitHub", level: 95 }
+    { name: "JavaScript", level: 97 },
+    { name: "Node.js", level: 97 },
+    { name: "React", level: 94 },
+    { name: "AWS", level: 91 },
+    { name: "Lambda", level: 93 },
+    { name: "DynamoDB", level: 93 },
+    { name: "Java", level: 87 },
+    { name: "Spring", level: 83 },
+    { name: "SQL", level: 81 },
+    { name: "MongoDB", level: 85 },
+    { name: "OOP", level: 81 },
+    { name: "Git/GitHub", level: 97 }
   ];
 
   return (
