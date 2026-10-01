@@ -77,8 +77,8 @@ export default function App() {
     },
     {
       title: "Tone Radar",
-      description: "Write an email or Slack message and every sentence gets a heat score for passive-aggression, blame, hedging, and unclear asks. Click a red sentence to see which phrases are causing it, then apply a rewrite that Jev has checked to be cooler, keep your meaning, and read naturally. Built using an Nginx/EC2 webserver with an Application Load Balancer/Auto Scaling",
-      tech: ["Nginx", "Javascript", "MongoDB"],
+      description: "Write an email or Slack message and every sentence gets a heat score for passive-aggression, blame, hedging, and unclear asks. Then, apply a rewrite that JEV has checked to be cooler, keep your meaning, and read naturally.",
+      tech: ["Nginx", "Javascript", "MongoDB", "JEV"],
       image: "./radar.png",
       link: "https://tone-radar.aws-prac-route53.com/"
     },
