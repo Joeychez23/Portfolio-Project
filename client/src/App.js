@@ -76,6 +76,13 @@ export default function App() {
       link: "https://chess.aws-prac-route53.com/"
     },
     {
+      title: "Tone Radar",
+      description: "Write an email or Slack message and every sentence gets a heat score for passive-aggression, blame, hedging, and unclear asks. Click a red sentence to see which phrases are causing it, then apply a rewrite that Jev has checked to be cooler, keep your meaning, and read naturally. Built using an Nginx/EC2 webserver with an Application Load Balancer/Auto Scaling",
+      tech: ["Nginx", "Javascript", "MongoDB"],
+      image: "./radar.png",
+      link: "https://tone-radar.aws-prac-route53.com/"
+    },
+    {
       title: "Data Migration Service",
       description: "A Java based service using Spring Core which migrates hundreds of millions of row of data into lower enviroments.",
       tech: ["Java", "Spring Core", "SQL"],
@@ -122,13 +129,6 @@ export default function App() {
       tech: ["Data Structures", "Algorithms", "Javascript"],
       image: "./Gist.png",
       link: "https://gist.github.com/Joeychez23/"
-    },
-    {
-      title: "Google Book Search",
-      description: "(API is Deprecated) A GraphQL application showcasing an Nginx/EC2 webserver with an Application Load Balancer/Auto Scaling",
-      tech: ["GraphQL", "Javascript", "MongoDB"],
-      image: "./books.png",
-      link: "https://books.aws-prac-route53.com/"
     },
     {
       title: "DevHub",
